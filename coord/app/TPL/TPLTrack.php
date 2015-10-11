@@ -24,15 +24,15 @@ class TPLTrack {
   }
 
   public function __toString() {
-    $str = "OziExplorer Track Point File Version 2.0\n"
-         . "WGS 84\n"
-         . "Altitude is in Feet\n"
-         . "Reserved 3\n"
-         . "0,2,$this->color,OziCE Track Log File,1\n"
-         . "0\n";
+    $str = "OziExplorer Track Point File Version 2.0\r\n"
+         . "WGS 84\r\n"
+         . "Altitude is in Feet\r\n"
+         . "Reserved 3\r\n"
+         . "0,2,$this->color,OziCE Track Log File,1\r\n"
+         . "0\r\n";
 
     foreach($this->lines as $line) {
-      $str .= ((string) $line) . "\n";
+      $str .= ((string) $line) . "\r\n";
     }
 
     return $str;
