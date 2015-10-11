@@ -19,7 +19,6 @@ class Converter extends Controller {
     if($request->hasFile('csvfile')) {
       $csv = file_get_contents($request->file('csvfile')->getRealPath());
     } else {
-      dd($request->all());
       $csv = $request->input('csv');
     }
 
