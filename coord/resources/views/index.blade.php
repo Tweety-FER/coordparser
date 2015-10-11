@@ -20,13 +20,22 @@
             Input your CSV
           </div>
           Paste your CSV, tab-separated, here, then press the submit button to
-          trigger the conversion process.
+          trigger the conversion process. Alternatively, you can choose to upload
+          a .csv file for processing.
         </div>
 
         <div class="ui field">
           <label>CSV</label>
           <textarea name="csv" rows="20"></textarea>
         </div>
+
+        <div class="ui field">
+          <label for="file" class="ui icon button">
+              <i class="file icon"></i>
+              Open File
+          </label>
+          <input type="file" name="csvfile" style="display:none">
+      </div>
 
         <button type="submit" class="ui blue submit button block">Submit</button>
       </form>

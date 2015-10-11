@@ -16,7 +16,12 @@ class Converter extends Controller {
   }
 
   public function convert(Request $request) {
-    $csv = $request->input('csv');
+    if($request->hasFile('csvfile')) {
+      $csv = file_get_contents($request->file('csvfile')->getRealPath());
+    } else {
+      $csv = $request->input('csv');
+    }
+
     $trackLines = CSVTrackParser::parse($csv);
     $track = new TPLTrack();
 
