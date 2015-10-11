@@ -59,8 +59,8 @@ class TPLTrackLine {
 
   public static function fromCSVLine(CSVTrackLine $line) {
     return new TPLTrackLine(
-      $line->getLongitude(),
       $line->getLatitude(),
+      $line->getLongitude(),
       $line->getCode(),
       $line->getElevation(),
       $line->getDatetime()
