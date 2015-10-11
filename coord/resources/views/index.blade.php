@@ -34,7 +34,7 @@
               <i class="file icon"></i>
               Open File
           </label>
-          <input type="file" name="csvfile" style="display:none">
+          <input type="file" name="csvfile">
       </div>
 
         <button type="submit" class="ui blue submit button block">Submit</button>
