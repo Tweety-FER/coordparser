@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Coord
+        psr4_prefix: Coord
+        src_path: app
