@@ -14,7 +14,7 @@
 
       <div class="ui divider"></div>
 
-      <form class="ui form" action="/convert" method="post">
+      <form class="ui form" action="/convert" method="post" enctype="multipart/form-data">
         <div class="ui info message">
           <div class="header">
             Input your CSV
@@ -30,11 +30,7 @@
         </div>
 
         <div class="ui field">
-          <label for="file" class="ui icon button">
-              <i class="file icon"></i>
-              Open File
-          </label>
-          <input type="file" name="csvfile">
+          <input type="file" name="csvfile" id="csvfile">
       </div>
 
         <button type="submit" class="ui blue submit button block">Submit</button>
